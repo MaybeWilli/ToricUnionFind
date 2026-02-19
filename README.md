@@ -6,6 +6,22 @@ Union find decoder for toric code, visualised in PyQt. The toric code is a quant
 code, where the edges of a self-looping grid are the qubits, and the vertices are the generators.
 A vertex will detect an error if there are an odd number of errors around.
 
+Required libraries: PyQt6
+
+Instructions to run:
+
+```
+cd path/to/ToricUnionFind
+
+python -m venv toricEnv
+
+source ./toricEnv/bin/activate
+
+pip install PyQt6
+
+python main.py
+```
+
 This visualiser shows how, when given a list of syndrome vertices, the union find decoder can group
 them into even clusters, then match them to correct the error.
 
